@@ -1,0 +1,9 @@
+# ninja log v5
+6	1342	1709571459865135481	CMakeFiles/ap_coursework_1.dir/src/CelestialBody.cpp.o	adc54e33e758b5c6
+7	1351	1709571459876051809	CMakeFiles/ap_coursework_1.dir/src/Star.cpp.o	34d7a6f2f0fcc7a1
+4	1127	1709571569917889562	CMakeFiles/ap_coursework_1.dir/main.cpp.o	f8b11b81ba4b5793
+4	521	1709566432780022008	CMakeFiles/ap_coursework_1.dir/src/vector3D.cpp.o	1341ca8b4ed5c38d
+6	1349	1709571459875424123	CMakeFiles/ap_coursework_1.dir/src/Planet.cpp.o	ae6ec419d3a6927a
+1128	1275	1709571570074579970	ap_coursework_1	1241578f64263be8
+3	1088	1709566433343387242	CMakeFiles/ap_coursework_1.dir/src/Matrix.cpp.o	714398736344692
+4	267	1709573225803264720	build.ninja	ea624c4adc651b89
