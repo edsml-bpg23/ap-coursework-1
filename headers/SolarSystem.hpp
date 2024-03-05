@@ -13,11 +13,11 @@
 class SolarSystem {
 public:
     SolarSystem(std::vector<CelestialBody> &bodies);
-    void runSimulation(int N);
-
+    void forward(int N);
+    void initialiseGForceMatrix();
 private:
     std::vector<CelestialBody> bodies;
-    std::unique_ptr<Matrix> GForceMatrix;  // allows us to allocate memory when required
+    std::unique_ptr<Matrix<Vector3D<double>>> GForceMatrix;  // allows us to allocate memory when required
 };
 
 #endif //SOLARSYSTEM_H

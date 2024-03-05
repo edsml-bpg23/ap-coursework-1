@@ -10,10 +10,10 @@
 
 
 CelestialBody::CelestialBody(
-    std::string &name, vector3D &position, double &mass, vector3D &velocity
+        std::string &name, Vector3D<double> &position, double &mass, Vector3D<double> &velocity
 ): name(name), position(position), mass(mass), velocity(velocity) {}
 
-double CelestialBody::computeGForce(const CelestialBody &body) {
+Vector3D<double> CelestialBody::computeGForce(const CelestialBody &body) {
     /*
      computes the gravitational force between two celestial bodies
      F = GM m / r^2, where
@@ -23,18 +23,25 @@ double CelestialBody::computeGForce(const CelestialBody &body) {
      r is the distance between the bodies
      */
 
-    double r = position.computeDistance(body.position);
-    return (G * body.mass) / pow(r, 2);
+//    double r = position.computeDistance(body.position);
+    Vector3D distance = position - body.position;
+    double distMag = distance.getMagnitude();
+
+    double forceMagnitude = (mass * body.mass) /  pow(distMag, 2);
+    return distance.norm() * forceMagnitude;
+
+//    return (G * body.mass) / pow(r, 2);
 }
 
-void CelestialBody::updateVelocity(vector3D &a, double &dt) {
+void CelestialBody::setVelocity(Vector3D<double> &a, double &dt) {
     // velocity_new += velocity * delta_t
+
     velocity.x += a.x * dt;
     velocity.y = a.y * dt;
     velocity.z = a.z * dt;
 }
 
-void CelestialBody::updatePosition(vector3D &v, double &dt) {
+void CelestialBody::setPosition(Vector3D<double> &v, double &dt) {
     // pos_new += pos * velocity * delta_t
     position.x += v.x * dt;
     position.y = v.y * dt;
@@ -42,15 +49,13 @@ void CelestialBody::updatePosition(vector3D &v, double &dt) {
     orbitalPath.push_back(position);
 }
 
+Vector3D<double> CelestialBody::getPosition() const {return position;}
 
+Vector3D<double> CelestialBody::getVelocity() const {return velocity;}
 
-
+std::vector<Vector3D<double>> CelestialBody::getOrbitalPath() const {return orbitalPath;}
 
 double CelestialBody::getMass() const {return mass;}
-
-vector3D CelestialBody::getVelocity() const {return velocity;}
-
-vector3D CelestialBody::getPosition() const {return position;}
 
 std::string CelestialBody::getName() const {return name;}
 

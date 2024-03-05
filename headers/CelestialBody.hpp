@@ -7,37 +7,40 @@
 #define CELESTIALBODY_H
 
 #include <string>
-#include "vector3D.hpp"
+#include "Vector3D.hpp"
 
 
 // interface for our celestial bodies, implementing using an abstract class
 class CelestialBody {
 public:
     // methods
-    CelestialBody(std::string &name, vector3D &position, double &mass, vector3D &velocity);
+    CelestialBody(std::string &name, Vector3D<double> &position, double &mass, Vector3D<double> &velocity);
 
-    double computeGForce(const CelestialBody &body);
+    Vector3D<double> computeGForce(const CelestialBody &body);
 
-    void updateVelocity(vector3D &a, double &dt);
+    void setVelocity(Vector3D<double> &a, double &dt);
 
-    void updatePosition(vector3D &v, double &dt);
+    void setPosition(Vector3D<double> &v, double &dt);
 
-    vector3D getPosition() const;
+    Vector3D<double> getPosition() const;
 
-    vector3D getVelocity() const;
+    Vector3D<double> getVelocity() const;
+
+    std::vector<Vector3D<double>> getOrbitalPath() const;
 
     double getMass() const;
 
     std::string getName() const;
 
     virtual std::string printSummary();
+
 private:
     // private members/attributes
     std::string name;
     double mass;  // kg
-    vector3D position;  // Euclidean
-    vector3D velocity;  // km/s
-    std::vector<vector3D> orbitalPath; // track trajectories
+    Vector3D<double> position;  // Euclidean
+    Vector3D<double> velocity;  // km/s
+    std::vector<Vector3D<double>> orbitalPath; // track trajectories
 };
 
 #endif //CELESTIALBODY_H

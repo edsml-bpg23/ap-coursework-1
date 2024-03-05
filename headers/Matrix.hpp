@@ -6,22 +6,21 @@
 #ifndef MATRIX_H
 #define MATRIX_H
 
-
-
+// we are going to use our
+template<typename T>
 class Matrix {
     public:
-        unsigned int m;
-        unsigned int n;
-        Matrix(unsigned int, unsigned int);
+        Matrix(unsigned int rows, unsigned int cols);
         ~Matrix();
 
         // overloading the () operator
-        double& operator()(int x, int y) const;
+        T& operator()(int x, int y) const;
 
         void print() const;
 
     private:
-        double** pointers{};
+        unsigned int m, n;
+        T** pointers{};
         void alloc();
 
 };

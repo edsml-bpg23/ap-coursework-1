@@ -9,17 +9,30 @@
 
 
 Planet::Planet(
-    std::string &name,
-    vector3D &position,
-    double &mass,
-    vector3D &velocity,
-    float radius  // km
-) : CelestialBody(name, position, mass, velocity), radius(radius) {}
+        std::string &name,
+        Vector3D<double> &position,
+        double &mass,
+        Vector3D<double> &velocity,
+        float radius,  // km
+        std::map<std::string, double> &atmosphericComposition
+) : CelestialBody(name, position, mass, velocity), radius(radius), atmosphericComposition(atmosphericComposition) {}
 
+
+std::map<std::string, double> Planet::getAtmosphericComposition() {
+    return atmosphericComposition;
+}
+
+std::string Planet::printComposition() {
+    std::string composition = "\nAtmospheric composition: \n";
+    for (auto& [key, value]: getAtmosphericComposition())
+        composition += key + ": " + std::to_string(value) + "\n";
+    return composition;
+}
 
 std::string Planet::printSummary() {
     std::string summary = CelestialBody::printSummary();
-    return summary + "\nRadius = " + std::to_string(radius);
+    summary += "\nRadius = " + std::to_string(radius) + printComposition();
+    return summary;
 }
 
 

@@ -9,11 +9,11 @@
 
 
 Star::Star(
-    std::string &name,
-    vector3D &position,
-    double &mass,
-    vector3D &velocity,
-    float radius  // km
+        std::string &name,
+        Vector3D<double> &position,
+        double &mass,
+        Vector3D<double> &velocity,
+        float radius  // km
 ) : CelestialBody(name, position, mass, velocity), radius(radius) {}
 
 

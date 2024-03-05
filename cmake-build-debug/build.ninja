@@ -51,49 +51,63 @@ build cmake_object_order_depends_target_ap_coursework_1: phony || CMakeFiles/ap_
 
 build CMakeFiles/ap_coursework_1.dir/src/Matrix.cpp.o: CXX_COMPILER__ap_coursework_1_unscanned_Debug /Users/bpg23/Documents/GitHub/ap-coursework-1/src/Matrix.cpp || cmake_object_order_depends_target_ap_coursework_1
   DEP_FILE = CMakeFiles/ap_coursework_1.dir/src/Matrix.cpp.o.d
-  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/bpg23/Documents/GitHub/ap-coursework-1/headers
   OBJECT_DIR = CMakeFiles/ap_coursework_1.dir
   OBJECT_FILE_DIR = CMakeFiles/ap_coursework_1.dir/src
 
 build CMakeFiles/ap_coursework_1.dir/main.cpp.o: CXX_COMPILER__ap_coursework_1_unscanned_Debug /Users/bpg23/Documents/GitHub/ap-coursework-1/main.cpp || cmake_object_order_depends_target_ap_coursework_1
   DEP_FILE = CMakeFiles/ap_coursework_1.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/bpg23/Documents/GitHub/ap-coursework-1/headers
   OBJECT_DIR = CMakeFiles/ap_coursework_1.dir
   OBJECT_FILE_DIR = CMakeFiles/ap_coursework_1.dir
 
 build CMakeFiles/ap_coursework_1.dir/src/CelestialBody.cpp.o: CXX_COMPILER__ap_coursework_1_unscanned_Debug /Users/bpg23/Documents/GitHub/ap-coursework-1/src/CelestialBody.cpp || cmake_object_order_depends_target_ap_coursework_1
   DEP_FILE = CMakeFiles/ap_coursework_1.dir/src/CelestialBody.cpp.o.d
-  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/bpg23/Documents/GitHub/ap-coursework-1/headers
   OBJECT_DIR = CMakeFiles/ap_coursework_1.dir
   OBJECT_FILE_DIR = CMakeFiles/ap_coursework_1.dir/src
 
-build CMakeFiles/ap_coursework_1.dir/src/vector3D.cpp.o: CXX_COMPILER__ap_coursework_1_unscanned_Debug /Users/bpg23/Documents/GitHub/ap-coursework-1/src/vector3D.cpp || cmake_object_order_depends_target_ap_coursework_1
-  DEP_FILE = CMakeFiles/ap_coursework_1.dir/src/vector3D.cpp.o.d
-  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+build CMakeFiles/ap_coursework_1.dir/src/Vector3D.cpp.o: CXX_COMPILER__ap_coursework_1_unscanned_Debug /Users/bpg23/Documents/GitHub/ap-coursework-1/src/Vector3D.cpp || cmake_object_order_depends_target_ap_coursework_1
+  DEP_FILE = CMakeFiles/ap_coursework_1.dir/src/Vector3D.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/bpg23/Documents/GitHub/ap-coursework-1/headers
   OBJECT_DIR = CMakeFiles/ap_coursework_1.dir
   OBJECT_FILE_DIR = CMakeFiles/ap_coursework_1.dir/src
 
 build CMakeFiles/ap_coursework_1.dir/src/Planet.cpp.o: CXX_COMPILER__ap_coursework_1_unscanned_Debug /Users/bpg23/Documents/GitHub/ap-coursework-1/src/Planet.cpp || cmake_object_order_depends_target_ap_coursework_1
   DEP_FILE = CMakeFiles/ap_coursework_1.dir/src/Planet.cpp.o.d
-  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/bpg23/Documents/GitHub/ap-coursework-1/headers
   OBJECT_DIR = CMakeFiles/ap_coursework_1.dir
   OBJECT_FILE_DIR = CMakeFiles/ap_coursework_1.dir/src
 
 build CMakeFiles/ap_coursework_1.dir/src/Star.cpp.o: CXX_COMPILER__ap_coursework_1_unscanned_Debug /Users/bpg23/Documents/GitHub/ap-coursework-1/src/Star.cpp || cmake_object_order_depends_target_ap_coursework_1
   DEP_FILE = CMakeFiles/ap_coursework_1.dir/src/Star.cpp.o.d
-  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/bpg23/Documents/GitHub/ap-coursework-1/headers
   OBJECT_DIR = CMakeFiles/ap_coursework_1.dir
   OBJECT_FILE_DIR = CMakeFiles/ap_coursework_1.dir/src
 
 build CMakeFiles/ap_coursework_1.dir/src/SolarSystem.cpp.o: CXX_COMPILER__ap_coursework_1_unscanned_Debug /Users/bpg23/Documents/GitHub/ap-coursework-1/src/SolarSystem.cpp || cmake_object_order_depends_target_ap_coursework_1
   DEP_FILE = CMakeFiles/ap_coursework_1.dir/src/SolarSystem.cpp.o.d
-  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/bpg23/Documents/GitHub/ap-coursework-1/headers
+  OBJECT_DIR = CMakeFiles/ap_coursework_1.dir
+  OBJECT_FILE_DIR = CMakeFiles/ap_coursework_1.dir/src
+
+build CMakeFiles/ap_coursework_1.dir/src/TerrestrialPlanet.cpp.o: CXX_COMPILER__ap_coursework_1_unscanned_Debug /Users/bpg23/Documents/GitHub/ap-coursework-1/src/TerrestrialPlanet.cpp || cmake_object_order_depends_target_ap_coursework_1
+  DEP_FILE = CMakeFiles/ap_coursework_1.dir/src/TerrestrialPlanet.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/bpg23/Documents/GitHub/ap-coursework-1/headers
+  OBJECT_DIR = CMakeFiles/ap_coursework_1.dir
+  OBJECT_FILE_DIR = CMakeFiles/ap_coursework_1.dir/src
+
+build CMakeFiles/ap_coursework_1.dir/src/JovianPlanet.cpp.o: CXX_COMPILER__ap_coursework_1_unscanned_Debug /Users/bpg23/Documents/GitHub/ap-coursework-1/src/JovianPlanet.cpp || cmake_object_order_depends_target_ap_coursework_1
+  DEP_FILE = CMakeFiles/ap_coursework_1.dir/src/JovianPlanet.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/bpg23/Documents/GitHub/ap-coursework-1/headers
   OBJECT_DIR = CMakeFiles/ap_coursework_1.dir
   OBJECT_FILE_DIR = CMakeFiles/ap_coursework_1.dir/src
@@ -106,7 +120,7 @@ build CMakeFiles/ap_coursework_1.dir/src/SolarSystem.cpp.o: CXX_COMPILER__ap_cou
 #############################################
 # Link the executable ap_coursework_1
 
-build ap_coursework_1: CXX_EXECUTABLE_LINKER__ap_coursework_1_Debug CMakeFiles/ap_coursework_1.dir/src/Matrix.cpp.o CMakeFiles/ap_coursework_1.dir/main.cpp.o CMakeFiles/ap_coursework_1.dir/src/CelestialBody.cpp.o CMakeFiles/ap_coursework_1.dir/src/vector3D.cpp.o CMakeFiles/ap_coursework_1.dir/src/Planet.cpp.o CMakeFiles/ap_coursework_1.dir/src/Star.cpp.o CMakeFiles/ap_coursework_1.dir/src/SolarSystem.cpp.o
+build ap_coursework_1: CXX_EXECUTABLE_LINKER__ap_coursework_1_Debug CMakeFiles/ap_coursework_1.dir/src/Matrix.cpp.o CMakeFiles/ap_coursework_1.dir/main.cpp.o CMakeFiles/ap_coursework_1.dir/src/CelestialBody.cpp.o CMakeFiles/ap_coursework_1.dir/src/Vector3D.cpp.o CMakeFiles/ap_coursework_1.dir/src/Planet.cpp.o CMakeFiles/ap_coursework_1.dir/src/Star.cpp.o CMakeFiles/ap_coursework_1.dir/src/SolarSystem.cpp.o CMakeFiles/ap_coursework_1.dir/src/TerrestrialPlanet.cpp.o CMakeFiles/ap_coursework_1.dir/src/JovianPlanet.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
   OBJECT_DIR = CMakeFiles/ap_coursework_1.dir
   POST_BUILD = :

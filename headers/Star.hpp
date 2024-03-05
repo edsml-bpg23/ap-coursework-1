@@ -10,7 +10,7 @@
 
 class Star : public CelestialBody {
 public:
-    Star(std::string &name, vector3D &position, double &mass, vector3D &velocity, float radius);
+    Star(std::string &name, Vector3D<double> &position, double &mass, Vector3D<double> &velocity, float radius);
     float radius;
     std::string printSummary();
 };
