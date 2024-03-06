@@ -25,15 +25,13 @@ int main() {
     Vector3D<double> earthVelocity = Vector3D(0., 5., 5.);
     Vector3D<double> jupyterVelocity = Vector3D(5., 0., 0.);
 
+
 //    double distance = pos1.computeDistance(pos2);
     std::string earthName = "Earth", jupyterName = "Jupyter", starName = "Sun";
 
-    // real stats
-//    double earthMass = 5.972e24, jupyterMass = 1.898e27, starMass = 1.989e30;
-//    float earthRadius = 6371., jupyterRadius = 71492., starRadius = 696340.;
 
-    double earthMass = 1, jupyterMass = 10, starMass = 10000;
-    float earthRadius = 15., jupyterRadius = 50., starRadius = 100.;
+    double earthMass = 1, jupyterMass = 20, starMass = 10000;
+    float earthRadius = 15., jupyterRadius = 20., starRadius = 100.;
 
     std::map<std::string, double> earthComp = {
             {"N", .78},
@@ -47,23 +45,17 @@ int main() {
             {"He", .1},
     };
 
-
     TerrestrialPlanet earth = TerrestrialPlanet(earthName, earthPos, earthMass, earthVelocity, earthRadius, earthComp);
     JovianPlanet jupyter = JovianPlanet(jupyterName, jupyterPos, jupyterMass, jupyterVelocity, jupyterRadius, jupyterComp);
     Star sun = Star(starName, starPos, starMass, starVelocity, starRadius);
 
     std::vector<CelestialBody> bodies = {sun, earth, jupyter};
     SolarSystem system = SolarSystem(bodies);
-//    system.forward(15);
 
-//    LOG(earth.printSummary())
-//    LOG(jupyter.printSummary())
-//    LOG(sun.printSummary())
+    system.forward(150, 1);
+    system.writeOrbitalPaths();
 
-
-
-//    LOG(sun.computeGForce(jupyter));
-//    LOG(jupyter.computeGForce(sun));
+    LOG("Simulation successfully complete.")
 
 
     return 1;

@@ -1,0 +1,3 @@
+/Users/bpg23/Documents/GitHub/ap-coursework-1/build/CMakeFiles/ap_coursework_1.dir
+/Users/bpg23/Documents/GitHub/ap-coursework-1/build/CMakeFiles/edit_cache.dir
+/Users/bpg23/Documents/GitHub/ap-coursework-1/build/CMakeFiles/rebuild_cache.dir

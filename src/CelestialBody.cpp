@@ -6,46 +6,34 @@
 #include <cmath>
 #include "CelestialBody.hpp"
 
-#define G 6.67430e-11
-
 
 CelestialBody::CelestialBody(
         std::string &name, Vector3D<double> &position, double &mass, Vector3D<double> &velocity
-): name(name), position(position), mass(mass), velocity(velocity) {}
+): name{name}, position{position}, mass{mass}, velocity{velocity} {}
 
 Vector3D<double> CelestialBody::computeGForce(const CelestialBody &body) {
     /*
      computes the gravitational force between two celestial bodies
-     F = GM m / r^2, where
+     constant G is omitted to suit small scale simulations with arbitrary units of distance and mass
+     F = (M . m) / r^2, where
      F is the G force,
-     G is the gravitational constant
      M and m are the masses of each body
      r is the distance between the bodies
      */
 
-//    double r = position.computeDistance(body.position);
-    Vector3D distance = position - body.position;
-    double distMag = distance.getMagnitude();
+    Vector3D dist = body.position - position;
+    double distMag = dist.magnitude();
 
-    double forceMagnitude = (mass * body.mass) /  pow(distMag, 2);
-    return distance.norm() * forceMagnitude;
-
-//    return (G * body.mass) / pow(r, 2);
+    double forceMag = (mass * body.mass) /  pow(distMag, 2);
+    return dist.norm() * forceMag;
 }
 
 void CelestialBody::setVelocity(Vector3D<double> &a, double &dt) {
-    // velocity_new += velocity * delta_t
-
-    velocity.x += a.x * dt;
-    velocity.y = a.y * dt;
-    velocity.z = a.z * dt;
+    velocity += a * dt;
 }
 
-void CelestialBody::setPosition(Vector3D<double> &v, double &dt) {
-    // pos_new += pos * velocity * delta_t
-    position.x += v.x * dt;
-    position.y = v.y * dt;
-    position.z = v.z * dt;
+void CelestialBody::setPosition(double &dt) {
+    position += velocity * dt;
     orbitalPath.push_back(position);
 }
 

@@ -20,7 +20,7 @@ public:
 
     void setVelocity(Vector3D<double> &a, double &dt);
 
-    void setPosition(Vector3D<double> &v, double &dt);
+    void setPosition(double &dt);
 
     Vector3D<double> getPosition() const;
 

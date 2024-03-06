@@ -13,7 +13,6 @@ class Planet : public CelestialBody {
 public:
     Planet(std::string &name, Vector3D<double> &position, double &mass, Vector3D<double> &velocity, float radius, std::map<std::string, double> &atmosphericComposition);
     float radius;
-//    void rotate();
     std::map<std::string, double> getAtmosphericComposition();
     std::string printSummary() override;
 private:

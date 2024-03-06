@@ -38,6 +38,7 @@ T& Matrix<T>::operator()(int x, int y) const {
 }
 
 
+
 // allocate the memory required for the matrix by initialising the double pointer (pointer to a pointer)
 template<typename T>
 void Matrix<T>::alloc() {
@@ -45,6 +46,7 @@ void Matrix<T>::alloc() {
     for (int i = 0; i < m; i++)
         pointers[i] = new T[n];
 }
+
 
 template<typename T>
 void Matrix<T>::print() const {
